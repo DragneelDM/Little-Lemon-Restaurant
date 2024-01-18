@@ -1,8 +1,11 @@
 # Final Capstone Project #
 
-This is final capstone project for little lemon restaurant. 
+This is the final capstone project for the Meta Front End Development, Powered by Coursea. 
+  Made by M P Madhan.
 
-The Project is build with :
+The project showcases a functioning website for the Little Lemon Restaurant.
+
+The Project is built with :
   * React
   * Bootstrap
 
