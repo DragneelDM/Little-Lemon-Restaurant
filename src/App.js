@@ -1,18 +1,19 @@
 // App.js
 import React from 'react';
-import Header from './Header';
-import Nav from './Nav';
+import HeaderNav from './HeaderNav';
 import Main from './Main';
 import Footer from './Footer';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Nav />
+    <div className="container">
+      <HeaderNav />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 };
 

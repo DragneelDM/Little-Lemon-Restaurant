@@ -1,0 +1,14 @@
+main img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.customCard {
+    border-radius: 20%;
+    max-width: 250px;
+    height: 200px;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
