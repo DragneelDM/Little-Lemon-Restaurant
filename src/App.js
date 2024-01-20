@@ -2,6 +2,7 @@
 import React from 'react';
 import HeaderNav from './HeaderNav';
 import Main from './Main';
+import AboutUS from './AboutUS';
 import Footer from './Footer';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +13,7 @@ const App = () => {
     <div className="container">
       <HeaderNav />
       <Main />
+      <AboutUS />
       <Footer />
     </div>
   );

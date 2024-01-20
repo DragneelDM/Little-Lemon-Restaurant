@@ -1,3 +1,7 @@
+img {
+    object-fit: cover;
+}
+
 main img {
     height: 20rem;
     width: 20rem;
@@ -5,10 +9,37 @@ main img {
 
 .customCard {
     border-radius: 20%;
-    max-width: 250px;
-    height: 200px;
+    width: 15rem;
+    min-width: 180px;
+    height: 20rem;
 }
 
 .border-box {
     box-sizing: border-box;
 }
+
+.test {
+    height: auto;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  
+  .aqua-gradient {
+    background: linear-gradient(40deg, green, gold  ) !important;
+  }
+  
+  .testimonial-card .avatar {
+    width: 8rem;
+    height: 10rem;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+
+  
