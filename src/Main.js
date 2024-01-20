@@ -12,9 +12,6 @@ const Main = () => {
     background:
       "linear-gradient(90deg, #407857 65%, #427757 48.75%, #457657 32.5%, #497457 0%)",
   };
-  const TitleStyle = {
-    color: "#F4CE14",
-  };
 
   const subTextStyle = {
     color: "#FFF",
@@ -31,10 +28,10 @@ const Main = () => {
           style={HeroStyle}
         >
           <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 className="display-4 fw-bold lh-1" style={TitleStyle}>
+            <h1 className="display-4 fw-bold lh-1 title">
               Little Lemon
             </h1>
-            <h3 className="text-uppercase" style={subTextStyle}>
+            <h3 className="text-uppercase h5" style={subTextStyle}>
               chicago
             </h3>
             <p className="lead" style={subTextStyle}>
@@ -108,13 +105,13 @@ const Main = () => {
               />
               <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <h5 className="card-title">Greek Salad</h5>
+                  <h5 className="card-title">Bruchetta</h5>
                   <p>$12.99</p>
                 </div>
                 <p className="card-text">
-                  The famous greek salad of cripsy lettuce, peppers, olives and
-                  our chicago style feta cheese, garnished with crunchy garlic
-                  and rosemary croutons.
+                  Our Bruchetta is made from grilled bread that has been
+                  smeared with garlic and seasoned with salt and olive oil. 
+                  Special orders apply
                 </p>
                 <p href="#" className="">
                   Order a Delivery
@@ -135,9 +132,9 @@ const Main = () => {
                   <p>$12.99</p>
                 </div>
                 <p className="card-text">
-                  The famous greek salad of cripsy lettuce, peppers, olives and
-                  our chicago style feta cheese, garnished with crunchy garlic
-                  and rosemary croutons.
+                  This comes straight from grandma's recipe book,
+                  every last ingredient has been sourced and is as authentic
+                  as can be imagined.
                 </p>
                 <p href="#" className="">
                   Order a Delivery

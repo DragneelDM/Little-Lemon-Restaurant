@@ -36,9 +36,9 @@ const Footer = () => {
           <section class="">
             <div class="container text-center text-md-start mt-5">
               <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ms-3 ps-3">
                   <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3"></i>Little Lemon Restaurant
+                    Little Lemon Restaurant
                   </h6>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing
