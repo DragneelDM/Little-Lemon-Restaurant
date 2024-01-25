@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import { Link, Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Logo from "./assets/Logo.svg";
-import HomePage from "./HomePage.js";
-import AboutPage from "./AboutPage.js";
-import MenuPage from "./MenuPage.js";
-import ReservationsPage from "./ReservationsPage.js";
-import OrderOnlinePage from "./OrderOnlinePage.js";
-import LoginPage from "./LoginPage.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -28,7 +22,6 @@ class HeaderNav extends React.Component {
     };
 
     return (
-      <Router basename={process.env.PUBLIC_URL}>
         <header className="d-flex justify-content-around h4">
           <img src={Logo} alt="Logo" className="me-5" />
           <nav
@@ -63,19 +56,19 @@ class HeaderNav extends React.Component {
                     </Link>
                   </li>
                   <li
-                  className={`nav-item ${
-                    this.state.activeLink === "About" ? "active" : ""
-                  }`}
+                    className={`nav-item ${
+                      this.state.activeLink === "About" ? "active" : ""
+                    }`}
                   >
-                  <Link
-                    to="/about"
-                    className="nav-link"
-                    onClick={() => this.handleNavLinkClick("About")}
-                  >
-                    About
-                  </Link>
+                    <Link
+                      to="/about"
+                      className="nav-link"
+                      onClick={() => this.handleNavLinkClick("About")}
+                    >
+                      About
+                    </Link>
                   </li>
-                <li
+                  <li
                   className={`nav-item ${
                     this.state.activeLink === "Menu" ? "active" : ""
                   }`}
@@ -131,17 +124,7 @@ class HeaderNav extends React.Component {
               </div>
             </div>
           </nav>
-
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/menu" element={<MenuPage />} />
-            <Route path="/reservations" element={<ReservationsPage />} />
-            <Route path="/order-online" element={<OrderOnlinePage />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Routes>
         </header>
-      </Router>
     );
   }
 }
