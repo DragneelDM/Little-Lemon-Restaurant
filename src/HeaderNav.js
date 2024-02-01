@@ -70,15 +70,15 @@ class HeaderNav extends React.Component {
                   </li>
                   <li
                   className={`nav-item ${
-                    this.state.activeLink === "Menu" ? "active" : ""
+                    this.state.activeLink === "Booking" ? "active" : ""
                   }`}
                 >
                   <Link
-                    to="/menu"
+                    to="/booking"
                     className="nav-link"
-                    onClick={() => this.handleNavLinkClick("Menu")}
+                    onClick={() => this.handleNavLinkClick("Booking")}
                   >
-                    Menu
+                    Bookings
                   </Link>
                 </li>
                 <li
@@ -121,6 +121,12 @@ class HeaderNav extends React.Component {
                   </Link>
                 </li>
                 </ul>
+                <Link
+                    to="/completed"
+                    className="nav-link"
+                    onClick={() => this.handleNavLinkClick("Completed")}
+                  >
+                  </Link>
               </div>
             </div>
           </nav>

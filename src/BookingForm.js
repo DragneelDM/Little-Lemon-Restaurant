@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-const BookingForm = () => {
+const BookingForm = (props) => {
     const [date, setDate] = useState("");
     const [times, setTimes] = useState("");
-    const [guest, setGuest] = useState("");
-    const [occasion, setOccasionf] = useState("");
+    const [guests, setGuests] = useState("");
+    const [occasion, setOccasion] = useState("");
 
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -49,7 +49,17 @@ const BookingForm = () => {
 
                         {/* Occastion Field */}
                         <div>
-                            
+                        <label htmlFor='book-occasion'>Occasion:</label>
+                        <select id='book-occasion' key={occasion} value={occasion} onChange={e => setOccasion
+                        (e.target.value)}>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                        </select>
+                        </div>
+
+                        {/* Submit Button */}
+                        <div className='btn btn-primary'>
+                            <input aria-label='On Click' type='submit' value={"Make Your Reservation"}/>
                         </div>
                     </fieldset>
                 </form>

@@ -4,7 +4,7 @@ import AboutImage from "./assets/Mario and Adrian A.jpg";
 
 const AboutUS = () => {
   return (
-    <section>
+    <section className="m-5">
       {" "}
       {
         <section className="m-5 py-3 py-md-5 py-xl-8">
@@ -27,7 +27,6 @@ const AboutUS = () => {
                       consequat nibh, ac interdum nisl. Nunc pulvinar nec massa
                       vitae sollicitudin.
                     </p>
-                    
                   </div>
                 </div>
               </div>
