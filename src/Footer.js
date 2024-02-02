@@ -12,22 +12,22 @@ const Footer = () => {
               <span>Get connected with us on social networks:</span>
             </div>
             <div>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="" className="me-4 text-reset">
+              <a href="" className="me-4 text-reset" title="#!">
                 <i className="fab fa-github"></i>
               </a>
             </div>
@@ -41,30 +41,29 @@ const Footer = () => {
                     Little Lemon Restaurant
                   </h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
 
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">Products</h6>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Angular
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       React
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Vue
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Laravel
                     </a>
                   </p>
@@ -73,22 +72,22 @@ const Footer = () => {
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Pricing
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Settings
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Orders
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="#!" className="text-reset" title="#!">
                       Help
                     </a>
                   </p>
@@ -114,12 +113,7 @@ const Footer = () => {
             </div>
           </section>
 
-          <div
-            className="text-center p-4 "
-          >
-            © 2021 Copyright:
-            Madhan MP
-          </div>
+          <div className="text-center p-4 ">© 2021 Copyright: Madhan MP</div>
         </footer>
       }{" "}
     </footer>

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Logo from "./assets/Logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -17,16 +17,12 @@ class HeaderNav extends React.Component {
   };
 
   render() {
-    const navStyle = {
-      backgroundColor: "#e3f2fd",
-    };
 
     return (
         <header className="d-flex justify-content-around h4">
           <img src={Logo} alt="Logo" className="me-5" />
           <nav
-            className="navbar navbar-expand-lg bg-body-tertiary"
-            style={navStyle}
+            className="navbar navbar-expand-lg bg-body-tertiary navStyle"
           >
             <div className="container-fluid">
               <button
@@ -51,6 +47,7 @@ class HeaderNav extends React.Component {
                       to="/"
                       className="nav-link"
                       onClick={() => this.handleNavLinkClick("Home")}
+                      title='#!'
                     >
                       Home
                     </Link>
@@ -64,47 +61,51 @@ class HeaderNav extends React.Component {
                       to="/about"
                       className="nav-link"
                       onClick={() => this.handleNavLinkClick("About")}
+                      title='#!'
                     >
                       About
                     </Link>
                   </li>
                   <li
                   className={`nav-item ${
-                    this.state.activeLink === "Booking" ? "active" : ""
+                    this.state.activeLink === "Reservations" ? "active" : ""
                   }`}
                 >
                   <Link
                     to="/booking"
                     className="nav-link"
-                    onClick={() => this.handleNavLinkClick("Booking")}
-                  >
-                    Bookings
-                  </Link>
-                </li>
-                <li
-                  className={`nav-item ${
-                    this.state.activeLink === "Reservations" ? "active" : ""
-                  }`}
-                >
-                  <Link
-                    to="/reservations"
-                    className="nav-link"
                     onClick={() => this.handleNavLinkClick("Reservations")}
+                    title='#!'
                   >
                     Reservations
                   </Link>
                 </li>
                 <li
                   className={`nav-item ${
-                    this.state.activeLink === "OrderOnline" ? "active" : ""
+                    this.state.activeLink === "Orders" ? "active" : ""
                   }`}
                 >
                   <Link
-                    to="/order-online"
+                    to="/orders"
                     className="nav-link"
-                    onClick={() => this.handleNavLinkClick("OrderOnline")}
+                    onClick={() => this.handleNavLinkClick("Orders")}
+                    title='#!'
                   >
-                    Order Online
+                    Orders
+                  </Link>
+                </li>
+                <li
+                  className={`nav-item ${
+                    this.state.activeLink === "Delieveries" ? "active" : ""
+                  }`}
+                >
+                  <Link
+                    to="/delieveries"
+                    className="nav-link"
+                    onClick={() => this.handleNavLinkClick("Delieveries")}
+                    title='#!'
+                  >
+                    Delieveries
                   </Link>
                 </li>
                 <li
@@ -116,6 +117,7 @@ class HeaderNav extends React.Component {
                     to="/login"
                     className="nav-link"
                     onClick={() => this.handleNavLinkClick("Login")}
+                    title='#!'
                   >
                     Login
                   </Link>
@@ -125,6 +127,7 @@ class HeaderNav extends React.Component {
                     to="/completed"
                     className="nav-link"
                     onClick={() => this.handleNavLinkClick("Completed")}
+                    title='#!'
                   >
                   </Link>
               </div>

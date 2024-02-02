@@ -1,18 +1,13 @@
 // Main.js
 import React, {useReducer} from "react";
-import HeroImage from "./assets/restauranfood.jpg";
-import CardImg1 from "./assets/greek salad.jpg";
-import CardImg2 from "./assets/bruchetta.png";
-import CardImg3 from "./assets/lemon dessert.jpg";
 import AboutPage from './AboutPage';
 import Booking from './Booking';
-import ReservationsPage from "./ReservationsPage";
 import OrderOnlinePage from "./OrderOnlinePage";
 import LoginPage from "./LoginPage";
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import "./Main.css";
-import Hero from "./Hero";
-
+import Hero from "./Home";
+import ConfirmedBooking from "./ConfirmedBooking";
+import DelieveriesPage from './DelieveriesPage';
 
 const Main = () => {
   const seedRandom = function(seed){
@@ -49,27 +44,21 @@ const Main = () => {
   const navigate = useNavigate();
   function submitForm (formData){
     if(submitAPI(formData))
-      navigate('/confirmed');
+      navigate('/');
   }
 
 
   return (
     <main className="container my-5">
-
-      {/* ------------------------------Specials ----------------------------------- */}
-
-      {/* ------------------------------ Testimonials ----------------------------------- */}
-
-
-
       <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch}
            submitForm={submitForm}/>} />
-          <Route path="/about" element={<ReservationsPage />} />
-          <Route path="/about" element={<OrderOnlinePage />} />
-          <Route path="/about" element={<LoginPage />} />
+          <Route path="/orders" element={<OrderOnlinePage />} />
+          <Route path="/delieveries" element={<DelieveriesPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
     </main>
   );
