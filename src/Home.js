@@ -7,7 +7,7 @@ import './App.css';
 function Hero() {
   return (
     <div>
-      <div className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg HeroStyle">
+      <div className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg HeroStyle bodybg">
         <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 className="display-4 fw-bold lh-1 title">Little Lemon</h1>
           <h3 className="text-uppercase h5 subTextStyle">chicago</h3>

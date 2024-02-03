@@ -160,22 +160,6 @@ const DelieveriesPage = () => {
           </div>
         </div>
 
-        <div className="card mb-4">
-          <div className="card-body p-4 d-flex flex-row">
-            <div className="form-outline flex-fill">
-              <input type="text" id="form1" className="form-control form-control-lg" />
-              <label className="form-label" htmlFor="form1">Discound code</label>
-            </div>
-            <button type="button" className="btn btn-outline-warning btn-lg ms-3">Apply</button>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-body">
-            <button type="button" className="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './App.css';
 
 const BookingForm = (props) => {
   const [date, setDate] = useState("");
@@ -6,21 +7,27 @@ const BookingForm = (props) => {
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
+  const bg = {
+    Background:"url("+"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='45' height='45' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(121)'%3E%3Crect width='100%25' height='100%25' fill='rgba(72, 187, 120,1)'/%3E%3Cpath d='M14.5 14.5h11v11h-11z' fill='rgba(246, 224, 94,1)'/%3E%3Cpath d='M-10-10h60v60h-60zM14 14v12h12v-12z' fill='rgba(246, 224, 94,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "+")",
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SubmitForm(e);
+    props.submitForm(e);
   };
 
   const handleChange = (e) => {
-    setDate(e);
-    props.dispatch(e);
+    const selectedDate = e.target.value; // Extract the selected date
+    setDate(selectedDate);
+    props.dispatch(selectedDate); // Pass only the selected date to dispatch
   };
   return (
     <header>
       <section>
         <form className="container d-flex justify-content-center">
           <fieldset
-            className=" container d-flex justify-content-around Width100"
+            className=" container d-flex justify-content-around Width100 bodybg"
+            style={bg}
           >
             <div className="flex-row">
               <div>
@@ -99,6 +106,7 @@ const BookingForm = (props) => {
                   placeholder=""
                   title="submit"
                   value={"Make Your Reservation"}
+                  onChange={(e) => handleSubmit(e)}
                 />
               </div>
             </div>
